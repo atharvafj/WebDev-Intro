@@ -12,8 +12,8 @@
 <!--Inputs=7. Therefore 7 rows and 2 columns--> 
 <form name="myform">
 <table class="text">
-    <tr><td>First Name</td><td><input type="text" id="fname" name="fname" required onclick="return validatefname()"></td></tr> <!--Input,Validation-->
-    <tr><td>Last Name</td><td><input type="text" id="lname" name="lname" required onclick="return validatelname()"></td></tr> <!--Input,Validation-->
+    <tr><td>First Name</td><td><input type="text" id="fname" name="fname" required oninput="return validatefname()"></td></tr> <!--Input,Validation-->
+    <tr><td>Last Name</td><td><input type="text" id="lname" name="lname" required oninput="return validatelname()"></td></tr> <!--Input,Validation-->
     <tr><td>College of Study</td><td><input type="text" id="cname" name="cname" required></td></tr> <!--Input-->
     <tr><td>Branch</td><td><select>
         <option value="def" selected disabled hidden></option>
@@ -34,7 +34,7 @@
         <input type="radio" name="yearg" value="3">2022<br>
         <input type="radio" name="yearg" value="4">2023<br>
     </td></tr> <!--BUtton-->
-    <tr><td>Contact Number</td><td><input type="text" id="cnumber" name="cnumber" required onclick="return validatenumber()"></td></tr> <!--Input,Validation-->
+    <tr><td>Contact Number</td><td><input type="text" id="cnumber" name="cnumber" required oninput="return validatenumber()"></td></tr> <!--Input,Validation-->
 </table>   
 </form>    
 </body>

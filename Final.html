@@ -4,17 +4,16 @@
 <title>Webinar Registration</title>    
 </head>    
 <body class="text gif">
-    
-      
-    <p class="type"><img src="https://image.shutterstock.com/image-vector/machine-learning-banner-web-icon-260nw-1110900704.jpg" class="img" height="150" width="700">Please fill out the details below to register for the Machine Learning Webinar.<br>
+    <script src="Final.js"></script>     
+    <p class="type"><img src="https://image.shutterstock.com/image-vector/machine-learning-banner-web-icon-260nw-1110900704.jpg" class="img" height="200" width="700">Please fill out the details below to register for the Machine Learning Webinar.<br>
     Further information will be sent via WhatsApp on the contact number provided.</p><br>
     
 <!--We will use a table to create the form-->
 <!--Inputs=7. Therefore 7 rows and 2 columns--> 
-<form>
+<form name="myform">
 <table class="text">
-    <tr><td>First Name</td><td><input type="text" id="fname" name="fname" required></td></tr> <!--Input,Validation-->
-    <tr><td>Last Name</td><td><input type="text" id="lname" name="lname" required></td></tr> <!--Input,Validation-->
+    <tr><td>First Name</td><td><input type="text" id="fname" name="fname" required onclick="return validatefname()"></td></tr> <!--Input,Validation-->
+    <tr><td>Last Name</td><td><input type="text" id="lname" name="lname" required onclick="return validatelname()"></td></tr> <!--Input,Validation-->
     <tr><td>College of Study</td><td><input type="text" id="cname" name="cname" required></td></tr> <!--Input-->
     <tr><td>Branch</td><td><select>
         <option value="def" selected disabled hidden></option>
@@ -35,7 +34,7 @@
         <input type="radio" name="yearg" value="3">2022<br>
         <input type="radio" name="yearg" value="4">2023<br>
     </td></tr> <!--BUtton-->
-    <tr><td>Contact Number</td><td><input type="text" id="cnumber" name="cnumber" required></td></tr> <!--Input,Validation-->
+    <tr><td>Contact Number</td><td><input type="text" id="cnumber" name="cnumber" required onclick="return validatenumber()"></td></tr> <!--Input,Validation-->
 </table>   
 </form>    
 </body>

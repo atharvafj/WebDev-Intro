@@ -1,0 +1,39 @@
+<html>
+<head>
+    <link rel="stylesheet" href="Final.css">
+<title>Webinar Registration</title>    
+</head>    
+<body class="text">
+    <p>Please fill out the details below to register for the Machine Learning Webinar.</p>
+    <p>Further details will be sent via WhatsApp on the contact number provided.</p><br>
+<!--We will use a table to create the form-->
+<!--Inputs=7. Therefore 7 rows and 2 columns--> 
+<form>
+<table class="text">
+    <tr><td>First Name</td><td><input type="text" id="fname" name="fname" required></td></tr> <!--Input,Validation-->
+    <tr><td>Last Name</td><td><input type="text" id="lname" name="lname" required></td></tr> <!--Input,Validation-->
+    <tr><td>College of Study</td><td><input type="text" id="cname" name="cname" required></td></tr> <!--Input-->
+    <tr><td>Branch</td><td><select>
+        <option value="def" selected disabled hidden></option>
+        <option value="cse">BE Computer Science Engg</option>
+        <option value="ece">BE Electronics and Communication Engg</option>
+        <option value="eee">BE Electronics and Electrical Engg</option>
+        <option value="eni">BE Electronics and Instrumentation Engg</option>
+        <option value="mech">BE Mechanical Engg</option>
+        <option value="chem">BE Chemical Engg</option>
+        </select></td></tr> <!--Dropdown-->
+    <tr><td>Year of Study</td><td><input type="radio" name="year" value="1">1st Year<br>
+        <input type="radio" " name="year" value="2">2nd Year<br>
+        <input type="radio" " name="year" value="3">3rd Year<br>
+        <input type="radio" " name="year" value="4">4th Year<br></td></tr> <!--Button-->
+    <tr><td>Expected year of Graduation</td><td>
+        <input type="radio" name="yearg" value="1">2020<br>
+        <input type="radio" name="yearg" value="2">2021<br>
+        <input type="radio" name="yearg" value="3">2022<br>
+        <input type="radio" name="yearg" value="4">2023<br>
+    </td></tr> <!--BUtton-->
+    <tr><td>Contact Number</td><td><input type="text" id="cnumber" name="cnumber" required></td></tr> <!--Input,Validation-->
+</table>   
+</form>    
+</body>
+</html>

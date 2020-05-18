@@ -1,0 +1,10 @@
+body{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSGcoIcehBlBI6otSljh7vQqO4fclgxrc4K9qyZyg4OOg8pzF5z&usqp=CAU); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;   
+}
+.text{
+    color: white;
+}
